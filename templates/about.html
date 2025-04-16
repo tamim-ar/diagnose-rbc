@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}About - DiagnoseRBC{% endblock %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4">About DiagnoseRBC</h1>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto"></div>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition-all duration-300">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-100 rounded-full p-3 mr-4">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900">Our Mission</h2>
+            </div>
+            <p class="text-gray-600 leading-relaxed">DiagnoseRBC is dedicated to revolutionizing blood disorder diagnosis through advanced machine learning technologies.</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition-all duration-300">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-100 rounded-full p-3 mr-4">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900">Technology</h2>
+            </div>
+            <p class="text-gray-600 leading-relaxed">We utilize state-of-the-art machine learning algorithms to analyze blood test parameters and provide accurate diagnosis predictions.</p>
+        </div>
+    </div>
+
+    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Our Team</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Healthcare Professionals</h3>
+                <p class="text-gray-600">Expert doctors and specialists in hematology</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Data Scientists</h3>
+                <p class="text-gray-600">Specialists in machine learning and data analysis</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Software Engineers</h3>
+                <p class="text-gray-600">Experienced developers in healthcare technology</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

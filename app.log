@@ -1,0 +1,32 @@
+2025-04-16 23:10:32,501 - WARNING -  * Debugger is active!
+2025-04-16 23:10:32,505 - INFO -  * Debugger PIN: 117-285-600
+2025-04-16 23:10:39,164 - INFO -  * Detected change in 'd:\\Programming\\DiagnoseRBC\\config.py', reloading
+2025-04-16 23:10:39,276 - INFO -  * Detected change in 'd:\\Programming\\DiagnoseRBC\\config.py', reloading
+2025-04-16 23:10:39,276 - INFO -  * Detected change in 'd:\\Programming\\DiagnoseRBC\\config.py', reloading
+2025-04-16 23:10:39,539 - INFO -  * Detected change in 'C:\\Users\\tamim\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\logging\\handlers.py', reloading
+2025-04-16 23:10:42,297 - WARNING -  * Debugger is active!
+2025-04-16 23:10:42,299 - INFO -  * Debugger PIN: 117-285-600
+2025-04-16 23:10:46,177 - INFO -  * Detected change in 'C:\\Users\\tamim\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-04-16 23:10:48,403 - WARNING -  * Debugger is active!
+2025-04-16 23:10:48,406 - INFO -  * Debugger PIN: 117-285-600
+2025-04-16 23:10:50,630 - INFO -  * Detected change in 'd:\\Programming\\DiagnoseRBC\\app.py', reloading
+2025-04-16 23:12:14,181 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 23:12:14,181 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 23:12:14,192 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 23:12:16,645 - WARNING -  * Debugger is active!
+2025-04-16 23:12:16,647 - INFO -  * Debugger PIN: 117-285-600
+2025-04-16 23:12:36,573 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:36] "GET / HTTP/1.1" 200 -
+2025-04-16 23:12:38,281 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:38] "GET / HTTP/1.1" 200 -
+2025-04-16 23:12:40,585 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:40] "GET / HTTP/1.1" 200 -
+2025-04-16 23:12:41,500 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:41] "GET /about HTTP/1.1" 200 -
+2025-04-16 23:12:44,958 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:44] "GET /documentation HTTP/1.1" 200 -
+2025-04-16 23:12:46,130 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:46] "GET /contact HTTP/1.1" 200 -
+2025-04-16 23:12:56,380 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 23:12:56,381 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 23:12:56,390 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 23:12:58,299 - WARNING -  * Debugger is active!
+2025-04-16 23:12:58,300 - INFO -  * Debugger PIN: 117-285-600
+2025-04-16 23:13:33,023 - INFO -  * Detected change in 'd:\\Programming\\DiagnoseRBC\\app.py', reloading
+2025-04-16 23:13:33,735 - INFO -  * Restarting with watchdog (windowsapi)

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Documentation - Blood Disorder Diagnosis{% endblock %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Documentation</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Complete guide to blood test parameters and their significance in diagnosis.</p>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {% for key, info in project_info.features_info.items() %}
+        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 rounded-full p-2 mr-3">
+                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">{{ info.name }}</h3>
+            </div>
+            <div class="space-y-4">
+                <p class="text-sm text-gray-600">{{ info.description }}</p>
+                {% if info.normal_range %}
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-4">
+                    <h4 class="text-sm font-semibold text-blue-800 mb-2">Reference Range:</h4>
+                    <p class="text-sm text-blue-700 whitespace-pre-line">{{ info.normal_range }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

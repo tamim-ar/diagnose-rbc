@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Blood Disorder Diagnosis{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .scale-up {
+            transition: transform 0.2s;
+        }
+        .scale-up:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="font-bold text-xl text-blue-600 flex items-center">
+                        <svg class="h-8 w-8 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                        </svg>
+                        DiagnoseRBC
+                    </a>
+                </div>
+                
+                <!-- Desktop menu -->
+                <div class="hidden md:flex md:items-center md:space-x-4">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200">Home</a>
+                    <a href="/about" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200">About</a>
+                    <a href="/documentation" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200">Documentation</a>
+                    <a href="/contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md transition-colors duration-200">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button p-2 rounded-md hover:bg-blue-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/" class="block px-3 py-2 rounded hover:bg-blue-700">Home</a>
+                    <a href="/about" class="block px-3 py-2 rounded hover:bg-blue-700">About</a>
+                    <a href="/documentation" class="block px-3 py-2 rounded hover:bg-blue-700">Documentation</a>
+                    <a href="/contact" class="block px-3 py-2 rounded hover:bg-blue-700">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8 mt-16">
+        <div class="fade-in">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">DiagnoseRBC</h3>
+                    <p class="text-gray-400">Advanced blood disorder diagnosis using machine learning algorithms.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="/about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="/documentation" class="text-gray-400 hover:text-white">Documentation</a></li>
+                        <li><a href="/contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-400">Email: info@diagnoserbc.com</p>
+                    <p class="text-gray-400">Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2025 DiagnoseRBC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
