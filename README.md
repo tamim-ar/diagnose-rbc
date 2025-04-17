@@ -68,4 +68,4 @@ Feel free to open issues and submit pull requests.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-© 2024 Tamim Ahasan Rijon
+© 2025 Tamim Ahasan Rijon
